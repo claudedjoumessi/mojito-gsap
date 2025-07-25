@@ -15,7 +15,7 @@ const Navbar = () => {
 
     navTween.fromTo(
       "nav",
-      { backgroundColor: "transparent" },
+      { backgroundColor: "transparent", backdropFilter: 'unset' },
       {
         backgroundColor: "#00000050",
         backdropFilter: "blur(7px)",
