@@ -29,7 +29,7 @@ const Contact = () => {
       })
       .to('#f-right-leaf', {
         y: -50, duration: 1, ease: 'power1.inOut'
-      })
+      }, '<')
   })
 
   return (
