@@ -8,6 +8,7 @@ import About from './components/About'
 import Art from './components/Art'
 import Menu from './components/Menu'
 import Contact from './components/Contact'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -21,6 +22,8 @@ function App() {
       <Art />
       <Menu />
       <Contact />
+
+      <SpeedInsights />
     </main>
   )
 }
