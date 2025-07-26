@@ -8,13 +8,13 @@ const Navbar = () => {
   useGSAP(() => {
     const navTween = gsap.timeline({
       scrollTrigger: {
-        trigger: "nav",
+        trigger: "#homeNav",
         start: "bottom top",
       },
     });
 
     navTween.fromTo(
-      "nav",
+      "#homeNav",
       { backgroundColor: "transparent", backdropFilter: 'unset' },
       {
         backgroundColor: "#00000050",
@@ -26,7 +26,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav>
+    <nav id="homeNav">
       <div>
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="logo" />
